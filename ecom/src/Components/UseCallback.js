@@ -7,13 +7,14 @@ function Usereducer() {
   function addition() {
     setAdd(add + 1);
   }
-  const Learning = useCallback(() => {}, [count]);
+  const Learning = useCallback(() => {
+  }, []);
   return (
     <div style={{ textAlign: "center" }}>
       <h3>{add}</h3>
       <button onClick={addition}>Addition</button>
       <h4>{count}</h4>
-      <Child Learn={Learning} count={count} />
+      <Child Learning={Learning} count={count} />
       <button onClick={() => setCount(count + 1)}>Count</button>
     </div>
   );
