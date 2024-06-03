@@ -14,6 +14,7 @@ import Greeting from "./Components/Greeting";
 import Effect from "./Components/Effect";
 import Callback from "./Components/callback";
 import Iife from "./Components/Iife";
+import Time from "./Components/Time";
 const Lazy = lazy(() => import("./Components/Lazy"));
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <hr></hr>
       <Callback/>
       <Iife/>
+      <Time/>
     </div>
   );
 }
